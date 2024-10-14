@@ -185,7 +185,7 @@ const PropertyDetails = ({ params }) => {
 	const showMoreItems = () => {
 		setVisibleItems((prev) => prev + 10); // Show 10 more items on click
 	};
-	type Category = 'kitchen' | 'living' | 'bathroom' | 'exterior';
+	type Category = 'kitchen' | 'living' | 'bathroom' | 'exterior' | 'others';
 	const images: Record<Category, string[]> = {
 		kitchen: [
 			'https://images.unsplash.com/photo-1504675099198-7023dd85f5a3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -200,10 +200,13 @@ const PropertyDetails = ({ params }) => {
 		exterior: [
 			'https://images.unsplash.com/photo-1725776339684-30dda601552e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxN3x8fGVufDB8fHx8fA%3D%3D',
 		],
+		others: [
+			'https://images.unsplash.com/photo-1571104508999-893933ded431?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+		],
 	};
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const [selectedCategories, setSelectedCategories] = useState<string[]>([
-		'kitchen',
+		'living',
 	]); // Default selected categories
 
 	// Create a flat array of all images across all categories

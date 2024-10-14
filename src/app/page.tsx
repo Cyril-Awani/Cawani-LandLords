@@ -2,13 +2,15 @@ import Property from './PropertyListing/page';
 import FilterSelect from './PropertyListing/components/FilterSelect';
 import Filter from './PropertyListing/components/FilterMenu';
 import AuthPage from './components/AuthPage';
+import PropertyList from './PropertyListing/page';
+import Hero from './components/Hero';
+import Featured from './components/Featured';
 
 function Page() {
 	return (
 		<div>
-			<div className='flex items-center justify-between px-4 py-2'></div>
-
-			<AuthPage />
+			<Hero />
+			<Featured />
 		</div>
 	);
 }

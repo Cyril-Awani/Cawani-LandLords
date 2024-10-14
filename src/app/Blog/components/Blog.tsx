@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import pic from '@/app/asset/images/pic.jpg';
+import pic from '../../../../public/images/pic.jpg';
 
 interface BlogProps {
 	category: string;

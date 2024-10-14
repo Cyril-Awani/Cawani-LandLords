@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        mono: ['DM Mono', 'monospace'],
+        poppins: ['Poppins', 'sans-serif'],
+      },
       animation:{
         'slow-spin': 'spin 3s linear infinite',
       },

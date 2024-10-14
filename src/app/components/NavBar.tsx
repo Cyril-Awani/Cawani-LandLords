@@ -78,7 +78,7 @@ export default function NavBar() {
 		<Disclosure as='nav' className='bg-bck border-b border-gray-300 space-x-4 '>
 			{({ open }) => (
 				<>
-					<div className='mx-auto max-w-7xl ite px-2 sm:px-5 lg:px-8'>
+					<div className='mx-auto max-w-7xl px-2 sm:px-5 lg:px-8'>
 						<div className='relative flex h-16 items-center justify-between'>
 							<div className='relative inset-y-0 left-0 flex items-center md:hidden'>
 								<DisclosureButton className='group relative inline-flex items-center justify-center rounded-md bg-txt p-2 mr-2 text-white hover:bg-txt hover:text-white focus:outline-none focus:ring-1 focus:ring-inset'>

@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Blog from './components/Blog'; // Ensure Blog component is correctly implemented
 import Image from 'next/image';
-import pic from '@/app/asset/images/pic.jpg'; // Example image
+import pic from '../../../public/images/pic.jpg'; // Example image
 import BlogCard from './components/BlogCard';
 import AdCard from '../components/AdCard';
 import BlogCategoryCarousel from './components/BlogCategoryCarousel';
