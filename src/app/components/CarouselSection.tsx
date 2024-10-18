@@ -64,7 +64,7 @@ const CarouselSection = ({ title, cardData }) => {
 
 			<div className='max-w-max'>
 				<div className='flex items-center'>
-					<div className='overflow-hidden overflow-x-auto scrollbar-hide h-[27rem]'>
+					<div className='overflow-hidden overflow-x-auto scrollbar-hide h-[27rem] snap-x snap-mandatory'>
 						<motion.div
 							className='flex flex-nowrap'
 							initial={{ x: 0 }}
@@ -72,7 +72,7 @@ const CarouselSection = ({ title, cardData }) => {
 							transition={{ type: 'spring', stiffness: 300, damping: 30 }}>
 							{cardData.map((card, index) => (
 								<motion.div
-									className={`p-2 flex-shrink-0 ${
+									className={`p-2 flex-shrink-0 snap-start ${
 										index === cardData.length - 1 ? 'mr-0' : 'mr-4'
 									}`}
 									key={index}
