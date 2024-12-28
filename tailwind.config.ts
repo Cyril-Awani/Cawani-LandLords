@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-const config: Config = {
+export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,24 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        mono: ['DM Mono', 'monospace'],
-        poppins: ['Poppins', 'sans-serif'],
-      },
-      animation:{
-        'slow-spin': 'spin 3s linear infinite',
-      },
       colors: {
-        btn: "var(--btn)",
-        txt: "var(--txt)",
-        bck: "var(--bg)",
-        hvr: "var(--hvrbg)"
-
+        background: "var(--background)",
+        foreground: "var(--foreground)",
       },
     },
   },
-  plugins: [
-    require('tailwindcss-debug-screens'),
-  ],
-};
-export default config;
+  plugins: [],
+} satisfies Config;
