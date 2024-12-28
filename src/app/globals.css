@@ -1,0 +1,79 @@
+/* Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* Add this to your global CSS or Tailwind config */
+.carousel-container {
+	scroll-behavior: smooth;
+}
+
+.carousel-container::-webkit-scrollbar {
+	height: 8px; /* Horizontal scrollbar */
+}
+
+.carousel-container::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+}
+
+.carousel-container::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+.carousel {
+	display: flex;
+	gap: 1.5rem;
+}
+
+.min-w {
+	min-width: 320px; /* Ensure cards maintain consistent width */
+}
+
+.form-checkbox {
+	appearance: none; /* Remove default checkbox styling */
+	-webkit-appearance: none; /* Remove Safari's default checkbox styling */
+	display: inline-block;
+	width: 20px; /* Customize size */
+	height: 20px; /* Customize size */
+	border: 2px solid #d1d5db; /* Light gray border */
+	border-radius: 4px; /* Rounded corners */
+	background-color: white; /* White background */
+	transition: background-color 0.3s, border-color 0.3s;
+	position: relative;
+	cursor: pointer;
+}
+
+.form-checkbox:checked {
+	background-color: #000; /* Blue for checked */
+	border-color: #000; /* Match border to the blue color */
+}
+
+.form-checkbox:checked::after {
+	content: '✔'; /* Checkmark character */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #6b7280;
+	font-size: 14px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.form-checkbox:hover {
+	border-color: #6b7280; /* Slightly darker gray border on hover */
+}
+
+.label {
+	display: flex;
+	align-items: center;
+	gap: 8px; /* Space between checkbox and label */
+	font-size: 14px; /* Font size */
+}
